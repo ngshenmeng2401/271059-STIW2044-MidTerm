@@ -1,7 +1,7 @@
 import 'dart:convert';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:http/http.dart' as http;
 import 'newproduct.dart';
 
@@ -86,16 +86,16 @@ class _ProductListScreenState extends State<ProductListScreen> {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children:[
                                         Padding(
-                                        padding: const EdgeInsets.fromLTRB(5, 15, 5, 0),
+                                        padding: const EdgeInsets.fromLTRB(5, 15, 0, 0),
                                         child: Text(_productList[index]['prname'],
                                             overflow: TextOverflow.ellipsis,
                                             textAlign: TextAlign.left,
-                                            style: TextStyle(fontSize: 20)),
+                                            style: TextStyle(fontSize: 18)),
                                         ),
                                         Padding(
-                                          padding: const EdgeInsets.fromLTRB(5, 15, 5, 0),
+                                          padding: const EdgeInsets.fromLTRB(0, 15, 5, 0),
                                           child: Text("RM: " + _productList[index]['prprice'],
-                                          style: TextStyle(fontSize:20),),
+                                          style: TextStyle(fontSize:18),),
                                         ),
                                       ] 
                                     ), 

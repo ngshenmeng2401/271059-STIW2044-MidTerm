@@ -382,7 +382,7 @@ class _NewProductScreenState extends State<NewProductScreen> {
             textColor: Colors.white,
             fontSize: 16.0);
 
-            Navigator.push(
+            Navigator.pushReplacement(
               context, MaterialPageRoute(builder: (context)=>ProductListScreen())
             );
           }else{
