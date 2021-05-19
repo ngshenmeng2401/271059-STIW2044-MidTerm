@@ -143,7 +143,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
     void _loadProducts() {
 
     http.post(
-      Uri.parse("https://javathree99.com/s271059/myshop/php/load_product.php"),
+      Uri.parse("https://javathree99.com/s271059/myshop/php/loadproduct.php"),
       body: {
       }).then(
         (response){

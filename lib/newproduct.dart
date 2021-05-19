@@ -361,7 +361,7 @@ class _NewProductScreenState extends State<NewProductScreen> {
     print(quantity);
 
     http.post(
-      Uri.parse("https://javathree99.com/s271059/myshop/php/new_product.php"),
+      Uri.parse("https://javathree99.com/s271059/myshop/php/newproduct.php"),
       body: {
         "prname":name,
         "prtype":type,
